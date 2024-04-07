@@ -1,0 +1,101 @@
+id,first,last,height,weight,gender,state,birthDay
+610,Alice,Johnson,158,104,Female,California,1969-06-12
+927,Alice,Johnson,189,48,Male,Illinois,1943-03-14
+310,David,Wilson,157,40,Male,Illinois,1976-08-12
+882,Bob,Anderson,158,111,Female,California,1964-12-04
+828,John,Davis,156,100,Male,New York,1976-06-04
+874,David,Anderson,199,50,Female,Florida,1939-11-10
+826,Alice,Davis,199,105,Male,Texas,1965-02-27
+983,John,Smith,183,98,Female,California,1985-05-28
+440,Charlie,Brown,148,92,Female,Illinois,1990-05-30
+50,Bob,Anderson,179,100,Female,New York,1956-12-19
+27,Jane,Smith,176,72,Female,Illinois,2006-03-26
+607,Emma,Davis,159,58,Female,Texas,1969-01-18
+875,Alice,Anderson,152,70,Female,Illinois,1934-08-29
+983,Jane,Brown,188,111,Female,Florida,1968-04-13
+276,Jane,Taylor,150,103,Female,Texas,1979-10-20
+86,Emma,Brown,159,75,Male,California,1989-10-04
+145,John,Davis,148,104,Female,Illinois,1994-11-29
+425,Alice,Johnson,191,49,Female,New York,2006-01-25
+653,David,Smith,177,92,Female,Illinois,1955-03-07
+323,Jane,Anderson,165,106,Female,California,1961-03-03
+896,Bob,Wilson,175,84,Female,California,2002-04-17
+168,Bob,Brown,192,41,Female,Illinois,1940-11-30
+569,Jane,Taylor,167,44,Male,New York,1949-10-12
+312,Emma,Smith,194,98,Male,New York,1995-12-31
+881,Alice,Anderson,175,120,Female,Illinois,1988-06-05
+339,Charlie,Brown,158,66,Male,Illinois,1980-05-10
+274,Alice,Davis,164,117,Female,Florida,1977-06-11
+1000,David,Smith,193,71,Female,Illinois,2001-08-26
+392,John,Johnson,188,61,Female,Texas,2003-05-26
+528,Jane,Taylor,173,59,Male,New York,2000-07-13
+236,Bob,Anderson,193,120,Male,Florida,1955-05-26
+577,Bob,Smith,186,96,Male,California,1952-05-16
+304,Emma,Taylor,183,71,Female,Texas,1949-06-07
+899,David,Anderson,167,119,Male,Texas,1973-01-04
+480,Emma,Brown,182,77,Female,Texas,1969-12-27
+438,Jane,Anderson,173,99,Female,Illinois,1958-07-23
+850,John,Smith,186,99,Female,Texas,1982-05-22
+601,David,Anderson,170,51,Female,Texas,1937-11-09
+98,Emma,Taylor,153,89,Male,Texas,1955-10-03
+637,Emma,Brown,190,120,Male,Texas,1969-06-03
+570,Bob,Taylor,184,53,Male,Florida,2000-09-14
+979,Charlie,Smith,194,107,Female,Texas,1995-05-14
+257,David,Taylor,158,48,Female,Texas,2002-12-16
+125,Charlie,Smith,181,55,Female,California,1984-03-15
+298,Bob,Taylor,195,108,Male,Illinois,1986-05-14
+61,Bob,Anderson,173,67,Male,Florida,1956-11-23
+360,Jane,Brown,159,83,Female,California,1971-12-23
+494,Alice,Taylor,198,114,Female,Florida,1943-12-19
+327,Alice,Davis,188,107,Male,California,2000-04-16
+81,Jane,Taylor,151,103,Male,Texas,1943-04-03
+979,David,Smith,178,43,Male,New York,1974-02-06
+148,Charlie,Anderson,141,46,Female,Texas,1941-03-21
+662,John,Taylor,161,101,Female,Texas,1992-01-16
+316,Alice,Wilson,192,102,Male,Florida,1999-09-24
+389,David,Smith,191,83,Female,Texas,1938-01-18
+338,John,Smith,183,63,Male,California,1936-05-12
+52,Jane,Taylor,174,45,Female,California,1935-03-16
+709,Alice,Davis,157,45,Female,California,1986-03-16
+810,Bob,Taylor,153,61,Male,California,1979-09-28
+407,Emma,Wilson,197,87,Female,California,1949-09-14
+21,Bob,Wilson,160,116,Male,Texas,1977-09-20
+638,Bob,Davis,155,78,Female,California,1958-07-02
+547,Emma,Smith,142,68,Male,Florida,1970-03-27
+65,Emma,Smith,147,67,Male,Florida,1994-05-20
+643,Emma,Smith,188,107,Female,California,1986-09-08
+535,David,Taylor,165,58,Female,Illinois,1984-12-28
+225,Alice,Anderson,190,66,Female,New York,1953-11-17
+790,David,Davis,188,66,Male,Illinois,1958-01-24
+864,John,Smith,143,79,Male,Illinois,2004-08-27
+347,Jane,Johnson,200,115,Male,Texas,1954-08-10
+718,Charlie,Johnson,190,49,Female,Florida,1948-07-14
+958,David,Johnson,188,103,Female,Illinois,1952-07-10
+987,Charlie,Wilson,193,90,Male,California,1959-12-28
+949,David,Davis,187,76,Male,Texas,1979-02-08
+944,David,Taylor,197,86,Female,Florida,1958-06-05
+412,Jane,Johnson,142,88,Female,New York,1983-07-18
+895,Jane,Johnson,149,91,Female,New York,1946-04-03
+317,Jane,Anderson,188,84,Male,Texas,1948-05-03
+187,Alice,Anderson,173,67,Female,California,1960-07-30
+985,David,Brown,189,113,Male,New York,1946-12-31
+505,Charlie,Wilson,157,111,Male,California,1995-08-24
+332,Charlie,Brown,196,65,Male,California,1988-02-07
+816,Jane,Taylor,157,49,Female,California,1998-03-06
+880,Emma,Johnson,190,103,Female,New York,1989-05-19
+537,Jane,Brown,181,115,Male,New York,1972-12-30
+578,Alice,Taylor,148,80,Male,Texas,1943-06-02
+874,Alice,Smith,149,102,Male,Illinois,1990-09-13
+221,David,Johnson,165,71,Female,Illinois,1962-09-16
+817,Alice,Taylor,184,65,Female,California,1965-10-07
+735,John,Brown,182,99,Male,New York,1958-02-28
+429,Jane,Johnson,194,80,Female,Florida,1936-01-20
+359,Emma,Brown,200,43,Female,Texas,1975-03-20
+982,Alice,Wilson,182,80,Male,Florida,1946-05-06
+124,Alice,Johnson,145,83,Female,Illinois,1947-04-25
+299,Emma,Wilson,185,67,Female,New York,1978-12-29
+221,Charlie,Johnson,164,118,Female,Illinois,1946-08-24
+999,David,Johnson,163,84,Female,Florida,1961-09-27
+634,Emma,Johnson,172,85,Female,California,1977-01-13
+886,Alice,Davis,148,62,Male,Texas,1980-12-15
+608,Jane,Anderson,191,41,Male,Florida,1949-09-26
