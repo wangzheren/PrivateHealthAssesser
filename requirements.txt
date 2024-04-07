@@ -6,3 +6,5 @@ streamlit-multipage==0.0.18
 joblib==1.1.0
 Flask==2.1.2
 requests==2.28.1
+matplotlib
+seaborn
