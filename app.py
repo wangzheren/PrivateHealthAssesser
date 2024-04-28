@@ -3,6 +3,8 @@ import pandas as pd
 import datetime
 import matplotlib.pyplot as plt
 import seaborn as sns
+from SQL_Client_BMI import add_entry,create_connection, create_table
+
 
 # Function to get BMI from height and weight
 def calculate_bmi(height_cm, weight_kg):
@@ -31,6 +33,7 @@ def bmi_distribution_by_gender(data):
     plt.xlabel('BMI')
     plt.ylabel('Frequency')
     st.pyplot(plt)
+    st.text("This graph shows the males' distribution of BMI (Body Mass Index) is generally larger than females.")
 
 # Function to generate BMI distribution by state chart
 def bmi_distribution_by_state(data):
@@ -42,6 +45,7 @@ def bmi_distribution_by_state(data):
     plt.ylabel('BMI')
     plt.xticks(rotation=45)
     st.pyplot(plt)
+    st.text("This graph shows the Illinios' distribution of BMI (Body Mass Index) is the highest and Florida the lowest compared to all states.")
 
 # Function to generate BMI distribution by age chart
 def bmi_distribution_by_age(data):
@@ -54,9 +58,11 @@ def bmi_distribution_by_age(data):
     plt.xlabel('Age')
     plt.ylabel('BMI')
     st.pyplot(plt)
+    st.text("This graph shows BMI ranges for all ages and there are no clear patterns.")
 
 # Main function to run the app
 def main():
+
     st.title("BMI Project")
 
     # Load data from CSV
@@ -88,19 +94,71 @@ def main():
     state = st.text_input("State")
     birth_date = st.date_input("Birth Date")
 
-    # Add button to trigger new entry addition
-    if st.button("What is your BMI?"):
-        new_entry = pd.DataFrame({
-            'first': [name],
-            'height': [height],
-            'weight': [weight],
-            'gender': [gender],
-            'state': [state],
-            'birthDay': [birth_date.strftime('%Y-%m-%d')]
-        })
-        data = pd.concat([data, new_entry], ignore_index=True)
-        st.success("New entry added successfully!")
+    if height != '' and weight != '':
+        # Calculate BMI for the new entry
+        new_bmi = calculate_bmi(height, weight)
 
+        # Determine BMI category
+        bmi_category = ""
+        if new_bmi < 18.5:
+            bmi_category = "Underweight"
+        elif 18.5 <= new_bmi < 25:
+            bmi_category = "Normal weight"
+        elif 25 <= new_bmi < 30:
+            bmi_category = "Overweight"
+        else:
+            bmi_category = "Obese"
+
+        if bmi_category == "Underweight":
+            color = "orange"
+        elif bmi_category == "Normal weight":
+            color = "green"
+        elif bmi_category == "Overweight":
+            color = "yellow"
+        else:
+            color = "red"
+
+        st.write(f"Your BMI is <span style='color:{color}; font-size:20px;'>{new_bmi:.2f}</span>, which is considered <span style='color:{color}; font-size:20px;'>{bmi_category}</span>.", unsafe_allow_html=True)
+
+        # Add button to trigger new entry addition
+        if st.button("Add Entry"):
+            new_entry = pd.DataFrame({
+                'Name': [name],
+                'Height (cm)': [height],
+                'Weight (kg)': [weight],
+                'Gender': [gender],
+                'State': [state],
+                'Birth Date': [birth_date.strftime('%Y-%m-%d')],
+                'BMI': [new_bmi]
+            })
+            columns = {
+                'name': {'type': 'VARCHAR(255)'},
+                'height_cm': {'type': 'FLOAT'},
+                'weight_kg': {'type': 'FLOAT'},
+                'gender': {'type': 'VARCHAR(10)'},
+                'state': {'type': 'VARCHAR(50)'},
+                'birth_date': {'type': 'DATE'},
+                'bmi': {'type': 'FLOAT'}
+}
+            create_table('new_data_table', columns)
+            add_entry('new_data_table', new_entry)
+            # data = pd.concat([data, new_entry], ignore_index=True)
+            
+            st.success("New entry added successfully!")
+            # # Call count_entries function to get the total number of entries
+            # total_entries = count_entries('new_data_table')
+
+            # # Display the total number of entries
+            # st.write(f"Total entries in the database: {total_entries}")
+
+            # new_entry_id = 1  # Replace 123 with the actual ID of the new entry
+            # entry = get_entry_by_id('new_data_table', new_entry_id)
+            # if entry:
+            #     st.write("New entry in database:", entry)
+            # else:
+            #     st.write("Failed to retrieve new entry from database.")
+    else:
+        st.warning("Please enter valid values for height and weight.")
 
 if __name__ == "__main__":
     main()
